@@ -1,0 +1,10 @@
+﻿@page
+@using kortlagning_vefur.Components;
+@model IndexModel
+@{
+    ViewData["Title"] = "Kortlagning MHR";
+}
+
+@(await Html.RenderComponentAsync<Vorsluslist>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
